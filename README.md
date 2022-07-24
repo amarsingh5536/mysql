@@ -27,6 +27,17 @@
   Here we granted the user permission to ALL the database functionalities, i.e CREATE, DELETE, INSERT, UPDATE, SELECT     etc. We could also decide what type of permission(s) we wish to grant a user;
 </p>
 
+
+<h2>GRANT ALL PRIVELEGES ON SINGLE DATABASES TO USER</h2>
+<div class="highlight highlight-source-shell">
+<pre><span class="pl-k">GRANT ALL PRIVILEGES ON * blog_data_database.* * TO</span> 'johnDoe'@'localhost';</pre>
+</div>
+<p>
+  Here we granted the user(johnDoe) permission to the database(blog_data_database) functionalities, i.e CREATE, DELETE, INSERT, UPDATE, SELECT     etc. We could also decide what type of permission(s) we wish to grant a user;
+</p>
+
+
+
 <h2>GRANT PRIVELEGE(S) TO USER</h2>
 <div class="highlight highlight-source-shell">
   <pre><span class="pl-k">GRANT SELECT, INSERT, DELETE ON *.* TO</span> 'johnDoe'@'localhost';</pre>
