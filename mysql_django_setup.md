@@ -16,7 +16,7 @@ GRANT ALL ON blog_database.* TO 'amar'@'localhost';
 FLUSH PRIVILEGES;
 
 
-#Add DATABASES setting in your django settings.py you can change your HOST(IP) accordingly where your MySql server is host for now there are using  local machine HOST.
+#Add DATABASES setting in your django settings.py you can change your HOST(IP) accordingly where your MySql server is host for now there are using  local machine HOST.\
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
