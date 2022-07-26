@@ -3,8 +3,7 @@
 mysql -u root -p database_name < ~/path-of-Sql-file/data-dump.sql 
 ***REMOVED*** 
 Note that you need to change the database_name with the actual name of your database and the username part with your existing MySQL username like root, amar_user etc.
-
-*if you are same dir there data-dump.sql do not use ~/
+If you are same dir there data-dump.sql do not use ~/
 
 ## Exporting a Database
 ***REMOVED***
