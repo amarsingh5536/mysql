@@ -19,7 +19,8 @@
 
 
 * Add DATABASES setting in your django settings.py you can change your HOST(IP) accordingly where your MySql server is host for now there are using  local machine HOST.\
-***REMOVED*** DATABASES = {
+***REMOVED*** 
+DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'blog_database',
@@ -32,4 +33,5 @@
             },
         }
     }
+    
 ***REMOVED***
