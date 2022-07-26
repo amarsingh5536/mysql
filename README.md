@@ -1,8 +1,10 @@
 
-<h1>MYSQL CHEAT SHEET</h1>
+<h2>MYSQL CHEAT SHEET</h2>
 <p>All the help you need to kick off your SQL journey</p>
 
 <p>This gist doesn't teach you to download and install MYSQL, so I'm assuming you already have it installed</p>
+
+<h2>MYSQL BASIC ABOUT CREATE USER, PERMISSION, DATABASE, AND TABLE COMMANDS</h2>
 
 <h2>LOGIN FROM TERMINAL</h2>
 <div class="highlight highlight-source-shell">
