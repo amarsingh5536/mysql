@@ -10,7 +10,7 @@
 
 ***REMOVED*** SELECT COUNT(column_name) FROM table_name; ***REMOVED***
 
-* example: ***REMOVED*** select count(salary) as salary_count from employee  where salary > "40000"; ***REMOVED***
+* example: ***REMOVED*** select count(salary) as salary_count from employee  where salary > 40000; ***REMOVED***
 
 
 ## Average
