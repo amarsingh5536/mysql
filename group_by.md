@@ -1,5 +1,13 @@
+The GROUP BY statement is used with aggregate functions  like:
+* `AVG`
+* `SUM`
+* `COUNT`
+* `MIN`
+* `MAX`
+* 
+to group the result-set by one or more columns.
 
-		           ***REMOVED***
+***REMOVED***
 
 ***REMOVED***
 +----+----------+---------+----------+--------+---------+
@@ -15,6 +23,7 @@
 +----+----------+---------+----------+--------+---------+
 
 ***REMOVED***
+## GROUP BY WITH COUNT
 
 ***REMOVED***
 SELECT country, COUNT(*) AS emp_count
@@ -33,7 +42,7 @@ GROUP BY country;
 +---------+-----------+
 
 ***REMOVED***
-
+## GROUP BY WITH SUM
 
 ***REMOVED***
  SELECT country, SUM(salary) AS total_salary FROM  employee group by country;
@@ -50,6 +59,10 @@ GROUP BY country;
 +---------+--------------+
 
 ***REMOVED***
+
+## GROUP BY WITH SUM AND HAVING CLAUSE
+* WE use HAVING insted of where to filter out the condition. 
+
 ***REMOVED***
 
 SELECT country, SUM(salary) AS total_salary FROM  employee group by country HAVING total_salary > 60000;
@@ -65,6 +78,8 @@ SELECT country, SUM(salary) AS total_salary FROM  employee group by country HAVI
 +---------+--------------+
 
 ***REMOVED***
+
+## GROUP BY WITH AVG
 
 ***REMOVED***
 
