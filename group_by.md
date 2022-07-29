@@ -91,3 +91,21 @@ SELECT country, age , AVG(age) as avg_salary FROM employee GROUP BY country, age
 +---------+------+------------+
 
 ***REMOVED***
+
+## GROUP BY WITH MAX
+
+***REMOVED***
+SELECT age , MAX(salary) as max_salary FROM employee GROUP BY age;
+***REMOVED***
+***REMOVED***
++------+------------+
+| age  | max_salary |
++------+------------+
+|   24 |      20000 |
+|   25 |      40000 |
+|   27 |      60000 |
+|   28 |      50000 |
++------+------------+
+***REMOVED***
+
+
