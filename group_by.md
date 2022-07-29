@@ -25,10 +25,7 @@ to group the result-set by one or more columns.
 ## GROUP BY WITH COUNT
 
 ***REMOVED***
-SELECT country, COUNT(*) AS emp_count
-FROM employee
-GROUP BY country;
-
+SELECT country, COUNT(*) AS emp_count FROM employee GROUP BY country;
 ***REMOVED***
 
 ***REMOVED***
@@ -45,7 +42,6 @@ GROUP BY country;
 
 ***REMOVED***
  SELECT country, SUM(salary) AS total_salary FROM  employee group by country;
-
 ***REMOVED***
 
 ***REMOVED***
@@ -63,9 +59,7 @@ GROUP BY country;
 * WE use `HAVING` insted of `WHERE` to filter out the condition. 
 
 ***REMOVED***
-
 SELECT country, SUM(salary) AS total_salary FROM  employee group by country HAVING total_salary > 60000;
-
 ***REMOVED***
 ***REMOVED***
 
@@ -81,11 +75,7 @@ SELECT country, SUM(salary) AS total_salary FROM  employee group by country HAVI
 ## GROUP BY WITH AVG
 
 ***REMOVED***
-
-SELECT country, age , AVG(age) as avg_salary
-FROM employee
-GROUP BY country, age;
-
+SELECT country, age , AVG(age) as avg_salary FROM employee GROUP BY country, age;
 ***REMOVED***
 
 ***REMOVED***
