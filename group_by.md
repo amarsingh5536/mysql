@@ -3,7 +3,8 @@ The GROUP BY statement is used with aggregate functions  like:
 * `SUM`
 * `COUNT`
 * `MIN`
-* `MAX`
+* `MAX` 
+
 to group the result-set by one or more columns.
 
 ***REMOVED***
