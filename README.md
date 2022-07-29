@@ -1,7 +1,3 @@
-
-<h2>MYSQL CHEAT SHEET</h2>
-<p>All the help you need to kick off your SQL journey</p>
-
 <h2>MYSQL BASIC COMMANDS ABOUT CREATE USER, PERMISSION, DATABASE, AND TABLE</h2>
 
 <h2>LOGIN FROM TERMINAL</h2>
