@@ -6,28 +6,68 @@
 * `MIN`
 * `MAX`
 
+***REMOVED***
+
+***REMOVED***
++----+----------+---------+----------+--------+---------+
+| id | username | country |  salary  | active | age     |
++----+----------+---------+----------+--------+---------+
+|  1 | mansih   |   usa   |  20000   |      1 | 24      |
+|  2 | amar     |   india |  40000   |      1 | 25      |
+|  3 | pallvi   |   india |  40000   |      1 | 25      |
+|  4 | mandeep  |   usa   |  50000   |      1 | 28      |
+|  5 | sant     |   india |  40000   |      1 | 25      |
+|  6 | gaurav   |   canada|  60000   |      1 | 27      |
+|  7 | sawan    |   india |  40000   |      1 | 27      |
++----+----------+---------+----------+--------+---------+
+
+***REMOVED***
+
+
 ## Count
 
 ***REMOVED*** SELECT COUNT(column_name) FROM table_name; ***REMOVED***
 
-* example: ***REMOVED*** select count(salary) as salary_count from employee  where salary > 40000; ***REMOVED***
+***REMOVED*** select count(salary) as salary_count from employee  where country == 'india'; ***REMOVED***
 
++--------------+
+| salary_count |
++--------------+
+|            4 |
++--------------+
 
 ## Average
 
 ***REMOVED*** SELECT AVG(column_name) FROM table_name; ***REMOVED***
 
-* example: ***REMOVED*** select avg(salary) from employee  where date > "1994-10-01"; ***REMOVED***
+***REMOVED*** select avg(salary) as avg_salary from employee  where age > 24; ***REMOVED***
 
-* example 2: ***REMOVED*** select round(avg(salary),2) from employee where date > "1994-10-01"; ***REMOVED***
++------------+
+| avg_salary |
++------------+
+| 45000.0000 |
++------------+
+
+***REMOVED*** select round(avg(salary),2) as avg_salary from employee where age > 24; ***REMOVED***
+
++------------+
+| avg_salary |
++------------+
+|   45000.00 |
++------------+
 
 
 ## Sum
 
 ***REMOVED*** SELECT SUM(column_name) FROM table_name; ***REMOVED***
 
-* example: ***REMOVED*** select sum(salary) from employee where (date > "1994-01-01" AND date < "1994-31-12"); ***REMOVED***
+***REMOVED*** select sum(salary) as salay_sum from employee where (age > 24 AND age < 27); ***REMOVED***
 
++-----------+
+| salay_sum |
++-----------+
+|    120000 |
++-----------+
 
 ## Min-MAx
 
@@ -36,9 +76,12 @@ SELECT MIN(column_name) FROM table_name;
 SELECT MAX(column_name) FROM table_name;
 ***REMOVED***
 
-* example: ***REMOVED*** select min(salary) from employee where (date > "1994-01-01" AND date < "1994-31-12"); ***REMOVED***
-
-* example: ***REMOVED*** select max(salary) from employee where (date > "1994-01-01" AND date < "1994-31-12"); ***REMOVED***
+***REMOVED*** select min(salary) from employee where (date > "1994-01-01" AND date < "1994-31-12"); ***REMOVED***
++-----------+
+| min_salay |
++-----------+
+|     40000 |
++-----------+
 
 
 
