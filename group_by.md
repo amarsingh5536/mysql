@@ -4,7 +4,6 @@ The GROUP BY statement is used with aggregate functions  like:
 * `COUNT`
 * `MIN`
 * `MAX`
-* 
 to group the result-set by one or more columns.
 
 ***REMOVED***
@@ -61,7 +60,7 @@ GROUP BY country;
 ***REMOVED***
 
 ## GROUP BY WITH SUM AND HAVING CLAUSE
-* WE use HAVING insted of where to filter out the condition. 
+* WE use `HAVING` insted of `WHERE` to filter out the condition. 
 
 ***REMOVED***
 
