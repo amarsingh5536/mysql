@@ -10,17 +10,17 @@ to group the result-set by one or more columns.
 ***REMOVED***
 
 ***REMOVED***
-+----+----------+---------+----------+--------+---------+
-| id | username | country |  salary  | active | age     |
-+----+----------+---------+----------+--------+---------+
-|  1 | mansih   |   usa   |  20000   |      1 | 24      |
-|  2 | amar     |   india |  40000   |      1 | 25      |
-|  3 | pallvi   |   india |  40000   |      1 | 25      |
-|  4 | mandeep  |   usa   |  50000   |      1 | 28      |
-|  5 | sant     |   india |  40000   |      1 | 25      |
-|  6 | gaurav   |   canada|  60000   |      1 | 27      |
-|  7 | sawan    |   india |  40000   |      1 | 27      |
-+----+----------+---------+----------+--------+---------+
+***REMOVED***
+***REMOVED***
+***REMOVED***
+***REMOVED***
+***REMOVED***
+***REMOVED***
+***REMOVED***
+***REMOVED***
+|  6 | gaurav   | canada  |   27 |  60000 |      1 | 2022-07-29 |
+***REMOVED***
+***REMOVED***
 
 ***REMOVED***
 ## GROUP BY WITH COUNT
