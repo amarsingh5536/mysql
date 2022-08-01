@@ -1,25 +1,25 @@
 ## Django and Mysql Setup
 
 * connect to your MySQL database as the root\
-***REMOVED*** mysql -u root -p ***REMOVED***
+``` mysql -u root -p ```
 
 
 * create a database in MySQL run the following command \
-***REMOVED*** CREATE DATABASE blog_database; ***REMOVED***
+``` CREATE DATABASE blog_database; ```
 
 * create a separate MySQL user amar that Django will use to operate the new database (blog_database)\
-***REMOVED*** CREATE USER 'amar'@'localhost' IDENTIFIED WITH mysql_native_password BY 'amar@123'; ***REMOVED***
+``` CREATE USER 'amar'@'localhost' IDENTIFIED WITH mysql_native_password BY 'amar@123'; ```
 
 * Grant All the user permissions to blog_database i.e: DELETE,UPDATE,CREATE etc.\
-***REMOVED*** GRANT ALL ON blog_database.* TO 'amar'@'localhost'; ***REMOVED***
+``` GRANT ALL ON blog_database.* TO 'amar'@'localhost'; ```
 
 
 * Flush the privileges so that the current instance of MySQL knows about the recent changes you’ve made\
-***REMOVED*** FLUSH PRIVILEGES; ***REMOVED***
+``` FLUSH PRIVILEGES; ```
 
 
 * Add DATABASES setting in your django settings.py you can change your HOST(IP) accordingly where your MySql server is host for now there are using  local machine HOST.\
-***REMOVED*** 
+``` 
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
@@ -34,4 +34,4 @@ DATABASES = {
         }
     }
     
-***REMOVED***
+```

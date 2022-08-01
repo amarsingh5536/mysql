@@ -7,29 +7,29 @@ The GROUP BY statement is used with aggregate functions  like:
 
 to group the result-set by one or more columns.
 
-***REMOVED***
+## TABLE EMPLOYEE
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+```
++----+----------+---------+------+--------+--------+------------+
+| id | username | country | age  | salary | active | date       |
++----+----------+---------+------+--------+--------+------------+
+|  1 | manish   | usa     |   24 |  20000 |      1 | 2022-07-29 |
+|  2 | amar     | india   |   25 |  40000 |      1 | 2022-07-29 |
+|  3 | pallvi   | india   |   25 |  40000 |      1 | 2022-07-29 |
+|  4 | mandeep  | usa     |   28 |  50000 |      1 | 2022-07-29 |
+|  5 | sant     | india   |   25 |  40000 |      1 | 2022-07-29 |
 |  6 | gaurav   | canada  |   27 |  60000 |      1 | 2022-07-29 |
-***REMOVED***
-***REMOVED***
+|  7 | sawan    | india   |   27 |  40000 |      1 | 2022-07-29 |
++----+----------+---------+------+--------+--------+------------+
 
-***REMOVED***
+```
 ## GROUP BY WITH COUNT
 
-***REMOVED***
+```
 SELECT country, COUNT(*) AS emp_count FROM employee GROUP BY country;
-***REMOVED***
+```
 
-***REMOVED***
+```
 +---------+-----------+
 | country | emp_count |
 +---------+-----------+
@@ -38,14 +38,14 @@ SELECT country, COUNT(*) AS emp_count FROM employee GROUP BY country;
 | usa     |         2 |
 +---------+-----------+
 
-***REMOVED***
+```
 ## GROUP BY WITH SUM
 
-***REMOVED***
+```
  SELECT country, SUM(salary) AS total_salary FROM  employee group by country;
-***REMOVED***
+```
 
-***REMOVED***
+```
 +---------+--------------+
 | country | total_salary |
 +---------+--------------+
@@ -54,15 +54,15 @@ SELECT country, COUNT(*) AS emp_count FROM employee GROUP BY country;
 | usa     |        70000 |
 +---------+--------------+
 
-***REMOVED***
+```
 
 ## GROUP BY WITH SUM AND HAVING CLAUSE
-* WE use `HAVING` insted of `WHERE` to filter out the condition. 
+* We use `HAVING` insted of `WHERE` to filter out the condition in group by. 
 
-***REMOVED***
+```
 SELECT country, SUM(salary) AS total_salary FROM  employee group by country HAVING total_salary > 60000;
-***REMOVED***
-***REMOVED***
+```
+```
 
 +---------+--------------+
 | country | total_salary |
@@ -71,15 +71,15 @@ SELECT country, SUM(salary) AS total_salary FROM  employee group by country HAVI
 | usa     |        70000 |
 +---------+--------------+
 
-***REMOVED***
+```
 
 ## GROUP BY WITH AVG
 
-***REMOVED***
+```
 SELECT country, age , AVG(age) as avg_salary FROM employee GROUP BY country, age;
-***REMOVED***
+```
 
-***REMOVED***
+```
 +---------+------+------------+
 | country | age  | avg_salary |
 +---------+------+------------+
@@ -90,14 +90,14 @@ SELECT country, age , AVG(age) as avg_salary FROM employee GROUP BY country, age
 | usa     |   28 |    28.0000 |
 +---------+------+------------+
 
-***REMOVED***
+```
 
 ## GROUP BY WITH MAX
 
-***REMOVED***
+```
 SELECT age , MAX(salary) as max_salary FROM employee GROUP BY age;
-***REMOVED***
-***REMOVED***
+```
+```
 +------+------------+
 | age  | max_salary |
 +------+------------+
@@ -106,6 +106,6 @@ SELECT age , MAX(salary) as max_salary FROM employee GROUP BY age;
 |   27 |      60000 |
 |   28 |      50000 |
 +------+------------+
-***REMOVED***
+```
 
 
